@@ -94,3 +94,7 @@ setting it to open by default
 ...
 
 </details>
+
+Maybe using bootstrap and customzing it
+
+https://getbootstrap.com/docs/5.2/components/accordion/

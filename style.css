@@ -32,10 +32,10 @@
 
 html {
     height: 100%;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     box-sizing: border-box;
     line-height: 1.15;
     margin: 0;
@@ -75,7 +75,7 @@ main {
     /* grid-template-columns: 1fr;
     grid-template-rows: auto auto; */
     background-color: white;
-    margin: 15rem 1rem 0 1rem;
+    margin: 15rem 2rem 0 2rem;
     border-radius: 1rem;
 
 }
@@ -110,52 +110,13 @@ main>h1 {
 }
 
 article {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 2rem;
+    text-align: center;*/
 }
 
-.article-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 300px;
-    position: relative;
-
-    margin: 0 auto;
-    text-align: left;
-}
-
-details {
-    background-color: aqua;
-    margin: 0;
-    display: block;
-}
-
-summary>* {
-    display: inline;
-}
-
-summary:not([open]) {
-    text-indent: 0.5em;
-    list-style: revert;
-    padding: 0.5rem;
-
-}
-
-details[open] {
-    padding-inline: 2rem;
-}
-
-details[open] {
-    width: inherit;
-    color: red;
-    background-color: aqua;
-}
 
 
 
