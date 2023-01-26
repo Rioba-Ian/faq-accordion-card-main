@@ -51,11 +51,11 @@ body {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
     background-color: white;
     margin: 10rem 1rem;
+
+    height: auto;
+    position: relative;
 
 }
 
@@ -72,8 +72,7 @@ main {
 
 .main-img {
     position: absolute;
-    top: 0%;
-    bottom: 100%;
+    transform: translateY(-5%);
 
 }
 
@@ -81,6 +80,7 @@ main {
 
 .arrow-img {
     position: absolute;
+    top: 20%;
 }
 
 article {
