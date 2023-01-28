@@ -58,7 +58,7 @@ body {
 details summary {
     cursor: pointer;
     padding: .5rem 0;
-    border-top: 1px solid #000;
+    border-bottom: 1px solid var(--very-dark-desaturated-blue);
     position: relative;
     list-style: none;
 }
@@ -71,7 +71,6 @@ details summary>* {
 
 details summary::after {
     content: url("./images/icon-arrow-down.svg");
-    color: #000;
     position: absolute;
     font-size: 2rem;
     line-height: 0;
@@ -80,9 +79,15 @@ details summary::after {
     right: 0;
 }
 
+details[open] summary::after {
+    content: url("./images/icon-arrow-down.svg");
+    rotate: 180deg;
+}
+
 main {
     background-color: white;
-    margin: 50vmin 1rem;
+    margin: 50vmin 2em .5em 2em;
+    border-radius: 1rem;
 }
 
 .img-container-mobile {
@@ -115,7 +120,7 @@ article {
 }
 
 .article-container {
-    padding: 1rem;
+    padding: 0.8em 1.25em 1em;
 }
 
 
