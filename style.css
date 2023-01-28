@@ -41,11 +41,17 @@ img {
     width: 100%;
 }
 
+h1 {
+    text-align: center;
+}
+
 body {
     background: linear-gradient(45deg, var(--soft-blue), var(--soft-violet));
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    font-family: 'Kumbh Sans', serif;
 }
 
 
@@ -105,7 +111,7 @@ main {
 }
 
 article {
-    margin-top: 10em;
+    margin-top: 8em;
 }
 
 .article-container {
