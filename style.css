@@ -70,12 +70,13 @@ details summary::after {
     font-size: 2rem;
     line-height: 0;
     margin-top: .75rem;
+    top: 20%;
     right: 0;
 }
 
 main {
     background-color: white;
-    margin: 10rem 1rem;
+    margin: 50vmin 1rem;
 }
 
 .img-container-mobile {
@@ -92,7 +93,7 @@ main {
 .main-img {
     position: absolute;
     transform: translateY(-8%);
-
+    width: 80%;
 }
 
 
@@ -100,6 +101,7 @@ main {
 .arrow-img {
     position: absolute;
     top: 20%;
+    width: inherit;
 }
 
 article {
@@ -114,4 +116,8 @@ article {
 
 .img-container-desktop {
     display: none;
+}
+
+details[open] summary {
+    font-weight: 700;
 }
