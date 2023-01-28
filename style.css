@@ -27,16 +27,14 @@
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
+
 
 html {
     height: 100%;
-    display: grid;
-    place-items: center;
     line-height: 1.15;
     margin: 0;
-    padding: 0;
 }
 
 img {
@@ -50,13 +48,34 @@ body {
     background-attachment: fixed;
 }
 
+
+details summary {
+    cursor: pointer;
+    padding: .5rem 0;
+    border-top: 1px solid #000;
+    position: relative;
+    list-style: none;
+}
+
+details summary>* {
+    display: inline-block;
+}
+
+
+
+details summary::after {
+    content: url("./images/icon-arrow-down.svg");
+    color: #000;
+    position: absolute;
+    font-size: 2rem;
+    line-height: 0;
+    margin-top: .75rem;
+    right: 0;
+}
+
 main {
     background-color: white;
     margin: 10rem 1rem;
-
-    height: auto;
-    position: relative;
-
 }
 
 .img-container-mobile {
@@ -72,7 +91,7 @@ main {
 
 .main-img {
     position: absolute;
-    transform: translateY(-5%);
+    transform: translateY(-8%);
 
 }
 
@@ -84,15 +103,7 @@ main {
 }
 
 article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 20%;
-    bottom: 100%;
-    height: auto;
-
+    margin-top: 10em;
 }
 
 .article-container {
