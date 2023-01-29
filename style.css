@@ -140,3 +140,15 @@ article {
 details[open] summary {
     font-weight: 700;
 }
+
+@media (min-width:600px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-image {
+        grid-template-columns: 1/2;
+        align-self: center;
+    }
+}
