@@ -35,6 +35,7 @@ html {
     height: 100%;
     line-height: 1.15;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -63,7 +64,7 @@ details {
 details summary {
     cursor: pointer;
     padding: .5rem 0;
-    border-bottom: 0.1px solid rgba(74, 75, 94, 0.5);
+    border-bottom: 0.1px solid rgba(74, 75, 94, 0.3);
     position: relative;
     list-style: none;
 }
