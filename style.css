@@ -151,4 +151,10 @@ details[open] summary {
         grid-template-columns: 1/2;
         align-self: center;
     }
+
+    .arrow-img {}
+
+    article {
+        margin-top: 1em;
+    }
 }
