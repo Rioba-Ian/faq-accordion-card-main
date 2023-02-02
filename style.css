@@ -145,6 +145,8 @@ details[open] summary {
     main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin: 20vh auto 0 auto;
+        width: min(90%, 900px);
     }
 
     .main-image {
