@@ -226,3 +226,21 @@ details[open] summary~* {
         transform: translateY(0);
     }
 }
+
+footer {
+    margin-top: 1em;
+    font-size: clamp(0.9rem, 0.9rem+0.9vw, 1.125rem);
+
+    animation: slidein .8s ease-in-out;
+}
+
+footer a {
+    color: rgb(49, 49, 49);
+
+    font-weight: bold;
+}
+
+.attribution {
+    text-align: center;
+
+}
