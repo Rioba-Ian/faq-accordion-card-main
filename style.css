@@ -88,6 +88,8 @@ details summary::after {
 details[open] summary::after {
     content: url("./images/icon-arrow-down.svg");
     rotate: 180deg;
+
+    transition: rotate 0.8s ease-in-out;
 }
 
 main {
@@ -180,11 +182,46 @@ details[open] summary {
         scale: 0.45;
         top: 5px;
         right: 50%;
+
+        animation: fromtop-fallin 1s ease-in-out;
     }
 
     .arrow-img {}
 
     article {
         margin-top: 1em;
+    }
+}
+
+details[open] summary~* {
+    animation: fallin .8s ease-in-out;
+}
+
+@keyframes fallin {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromtop-fallin {
+    0% {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
