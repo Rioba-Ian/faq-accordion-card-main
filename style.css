@@ -175,6 +175,7 @@ details[open] summary {
         bottom: 0%;
         position: absolute;
         right: 50%;
+        animation: slidein .8s ease-in-out;
     }
 
     .img-container-desktop>.email-box-desktop {
@@ -194,10 +195,10 @@ details[open] summary {
 }
 
 details[open] summary~* {
-    animation: fallin .8s ease-in-out;
+    animation: slidein .8s ease-in-out;
 }
 
-@keyframes fallin {
+@keyframes slidein {
     0% {
         opacity: 0;
         transform: translateX(-10px);
