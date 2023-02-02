@@ -242,5 +242,10 @@ footer a {
 
 .attribution {
     text-align: center;
+}
+
+.attribution a:hover {
+    color: var(--very-dark-desaturated-blue);
+
 
 }
