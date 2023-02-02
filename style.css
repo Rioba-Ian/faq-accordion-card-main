@@ -154,6 +154,34 @@ details[open] summary {
         align-self: center;
     }
 
+    .img-container-mobile {
+        display: none;
+    }
+
+    .img-container-desktop {
+        position: relative;
+        display: block;
+    }
+
+    .main-image-desktop {
+        position: relative;
+        right: 10%;
+    }
+
+    .img-container-desktop>.bg-pattern-desktop {
+        scale: 1.75;
+        bottom: 0%;
+        position: absolute;
+        right: 50%;
+    }
+
+    .img-container-desktop>.email-box-desktop {
+        position: absolute;
+        scale: 0.45;
+        top: 5px;
+        right: 50%;
+    }
+
     .arrow-img {}
 
     article {
